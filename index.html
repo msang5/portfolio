@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manmohan Sangola - Python Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --text: #333;
+            --bg: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        /* Header */
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .contact-bar {
+            background: var(--secondary);
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            border-left: 3px solid var(--secondary);
+            padding-left: 2rem;
+            margin: 2rem 0;
+        }
+
+        .timeline-item {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.35rem;
+            top: 1.5rem;
+            width: 15px;
+            height: 15px;
+            background: var(--secondary);
+            border-radius: 50%;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manmohan Sangola</h1>
+        <p>Python Developer | Full Stack Engineer</p>
+    </header>
+
+    <div class="contact-bar">
+        <div><i class="fas fa-phone"></i> 217-220-3305</div>
+        <div><i class="fas fa-envelope"></i> smanmohan1314@gmail.com</div>
+        <div><i class="fab fa-linkedin"></i> linkedin.com/in/manmohan-sangola</div>
+        <div><i class="fas fa-map-marker-alt"></i> Schaumburg, IL</div>
+    </div>
+
+    <section id="skills">
+        <h2 style="text-align: center; padding: 2rem;">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3><i class="fab fa-python"></i> Python</h3>
+                <ul>
+                    <li>Django/Flask</li>
+                    <li>Pandas/NumPy</li>
+                    <li>REST APIs</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-database"></i> Databases</h3>
+                <ul>
+                    <li>MySQL/PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>SQLite</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-tools"></i> Tools</h3>
+                <ul>
+                    <li>Git/Docker</li>
+                    <li>Celery/Redis</li>
+                    <li>Agile/TDD</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" style="padding: 2rem;">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Python Developer - Cigniti Technologies Ltd. (Dec 2020–Jun 2023)</h3>
+                <ul>
+                    <li>Developed web apps using Python/Django (25%↑ user engagement)</li>
+                    <li>Optimized REST APIs (30%↓ integration time)</li>
+                    <li>Improved SQL query performance (20%↑ data retrieval)</li>
+                    <li>Resolved 95% customer tickets within 24 hours</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 style="text-align: center; padding: 2rem;">Key Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Online Transaction Management System</h3>
+                <p><strong>Technologies:</strong> Python, Django, MySQL</p>
+                <ul>
+                    <li>40%↑ order processing speed</li>
+                    <li>30%↓ stockouts</li>
+                    <li>25%↓ support inquiries</li>
+                </ul>
+            </div>
+            <div class="project-card">
+                <h3>CRM System</h3>
+                <p><strong>Technologies:</strong> Python, Django, MySQL</p>
+                <ul>
+                    <li>35%↓ response times</li>
+                    <li>50%↑ customer communication</li>
+                    <li>Improved client retention</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" style="padding: 2rem; text-align: center;">
+        <h2>Education</h2>
+        <div style="margin-top: 1.5rem;">
+            <h3>MS in Management Information Systems</h3>
+            <p>University of Illinois Springfield (2024)</p>
+            <h3 style="margin-top: 1rem;">BE in Electronics & Communication</h3>
+            <p>Vignan University (2020)</p>
+        </div>
+    </section>
+
+    <section id="achievements" style="padding: 2rem; background: var(--primary); color: white;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="text-align: center;">Certifications & Achievements</h2>
+            <ul style="margin-top: 1rem; list-style: none;">
+                <li><i class="fas fa-trophy"></i> 20% faster query performance</li>
+                <li><i class="fas fa-certificate"></i> High customer satisfaction rates</li>
+                <li><i class="fas fa-clock"></i> 15% improved project delivery</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
